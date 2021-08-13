@@ -7,8 +7,8 @@
     <ProjectGuid>{77257022-BD9D-4190-A9C2-B020336757E1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RansomDLL</RootNamespace>
-    <AssemblyName>RansomDLL</AssemblyName>
+    <RootNamespace>FRansomDLL</RootNamespace>
+    <AssemblyName>FRansomDLL</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
